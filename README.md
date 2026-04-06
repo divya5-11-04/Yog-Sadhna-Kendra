@@ -6,7 +6,7 @@ Welcome to the official web platform for **Yog Sadhna Kendra**, a nationwide NGO
 
 ## 🌐 Live Demo
 
-[🔗 Visit the Website]([https://your-deployed-url.com](https://divya5-11-04.github.io/Yog-Sadhna-Kendra/)) 
+[🔗 Visit the Website]((https://divya5-11-04.github.io/Yog-Sadhna-Kendra/)) 
 
 ---
 
