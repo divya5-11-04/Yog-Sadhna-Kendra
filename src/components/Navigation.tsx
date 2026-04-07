@@ -3,18 +3,16 @@ import { Menu, X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import { useSupport } from "@/context/SupportContext";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { openSupport } = useSupport();
 
   const navItems = [
     { name: "Home", href: "/" },
     { name: "Our Gurus", href: "/Gurus"},
     { name: "Ashram Highlights", href: "/ashram-highlights" },
-    { name: "Aarti & Satsang", href: "#aarti" },
-    { name: "Wellness Store", href: "#store" },
-    { name: "Blog", href: "/blog" },
-    { name: "Join Us", href: "#volunteer" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -43,7 +41,7 @@ const Navigation = () => {
           {item.name}
         </Link>
       ))}
-        <Button className="bg-gradient-primary hover:shadow-sacred transition-all duration-300 text-xs sm:text-sm md:text-base px-4 py-2">
+        <Button onClick={openSupport} className="bg-gradient-primary hover:shadow-sacred transition-all duration-300 text-xs sm:text-sm md:text-base px-4 py-2">
           <Heart className="w-4 h-4 mr-2" />
           Support Our Mission
         </Button>
@@ -80,7 +78,7 @@ const Navigation = () => {
   </Link>
 ))}
         <div className="px-4 pt-2">
-          <Button className="w-full text-sm bg-gradient-primary hover:shadow-sacred transition">
+          <Button onClick={() => { openSupport(); setIsOpen(false); }} className="w-full text-sm bg-gradient-primary hover:shadow-sacred transition">
             <Heart className="w-4 h-4 mr-2" />
             Support Our Mission
           </Button>

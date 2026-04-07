@@ -21,25 +21,19 @@ const gurus = [
     id: 1,
     name: "Maharaj Ji",
     mantra: " करो योग रहो निरोग ",
-    specialty: "Hatha Yog & Meditation",
     image: "/gurus/Maharaj ji.jpg",
-    description: "Master of traditional Hatha Yog with 30+ years of experience",
   },
   {
     id: 2,
     name: "Ram Lal Ji maharaj",
     mantra: "🌹राम नाम की नैय्या लेकर सतगुरू करें पुकार आओ मेरी नैय्या में ले जाऊंगा भव पार🌹",
-    specialty: "Pranayama & Breath Healing",
     image: "/gurus/Ram Lal Ji maharaj.png",
-    description: "Expert in ancient breathing techniques and energy healing",
   },
   {
     id: 3,
     name: "Swami Ram Mulakh Ji Maharaj",
     mantra: "तत् त्वम् असि",
-    specialty: "Meditation & Spiritual Guidance",
     image: "/gurus/Mulakh Ji maharaj.png",
-    description: "Profound teacher of Vedantic wisdom and deep meditation",
   },
 ];
 
@@ -99,7 +93,7 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 className="bg-gradient-primary hover:shadow-sacred transition-all duration-300 font-body sm:text-lg text-base px-6 py-4"
-                 onClick={() => navigate('/GoalSelection')}
+                 onClick={() => navigate('/#')}
               >
                 <Play className="w-5 h-5 mr-2" />
                 Begin Your Healing Journey
@@ -169,15 +163,10 @@ const HeroSection = () => {
                 <h3 className="font-sacred text-2xl sm:text-3xl text-primary font-bold">
                   {gurus[currentGuru].name}
                 </h3>
-                <p className="font-body text-base sm:text-lg text-secondary font-medium">
-                  {gurus[currentGuru].specialty}
-                </p>
-                <p className="font-sacred text-lg sm:text-xl text-accent">
+                <p className="font-sacred text-lg sm:text-xl text-blue-900 dark:text-blue-400">
                   {gurus[currentGuru].mantra}
                 </p>
-                <p className="font-body text-muted-foreground text-sm sm:text-base">
-                  {gurus[currentGuru].description}
-                </p>
+            
               </div>
 
               <Button

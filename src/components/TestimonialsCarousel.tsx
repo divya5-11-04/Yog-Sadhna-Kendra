@@ -6,23 +6,23 @@ import { Button } from "@/components/ui/button";
 const testimonials = [
   {
     id: 1,
-    name: "Priya Sharma",
-    location: "Delhi",
-    condition: "Chronic Back Pain",
+    name: "Yog Student",
+    location: "Ferozepur",
+    condition: "Stomach Bloating",
     rating: 5,
     testimonial:
-      "After years of suffering from chronic back pain, the personalized yog plan from Yog Sadhana Kendra completely transformed my life.",
+      "Suffered from bloating, the personalized yog plan from Yog Sadhana Kendra completely transformed my life.",
     video: "public/testimonials/1.mp4",
-    duration: "3 months of practice",
+    duration: "Felt better within a day, complete relief in 2 weeks",
   },
   {
     id: 2,
-    name: "Rajesh Kumar",
-    location: "Mumbai",
-    condition: "Stress & Anxiety",
+    name: "Yog Student",
+    location: "Ferozepur",
+    condition: "Back Pain & Diabetes",
     rating: 5,
     testimonial:
-      "The meditation sessions and pranayama classes helped me find inner peace during the most stressful period of my career.",
+      "Our City is lucky to have such a gem. The yog sessions and guidance from Yog Sadhana Kendra not only relieved my back pain but also helped me manage my diabetes effectively.",
     video: "public/testimonials/2.mp4",
     duration: "6 months of practice",
   },
