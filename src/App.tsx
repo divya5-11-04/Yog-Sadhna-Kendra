@@ -23,7 +23,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <SupportProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/Yog-Sadhna-Kendra/">
           <Routes>
             <Route element={<Layout />}>
             <Route path="/" element={<Index />} />
