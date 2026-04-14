@@ -23,7 +23,7 @@ const gurus = [
   {
     id: "ramlalji",
     name: "Swami Ram Lal Ji Maharaj",
-    photo: "/gurus/Ram Lal Ji maharaj.png",
+    photo: "./gurus/Ram Lal Ji maharaj.png",
     teaching: "Vedanta & Self-Realization",
     quote: "Know thyself, and you shall know the universe.",
     bio: "A scholar of the Upanishads helping seekers with clarity...",
