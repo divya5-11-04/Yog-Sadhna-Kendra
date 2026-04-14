@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getAssetPath } from "@/lib/assetPath";
 
 const gurus = [
   {
     id: "rampyaaraji",
     name: "Swami Ram Pyara Ji Maharaj",
-    photo: "/gurus/Maharaj ji.jpg",
+    photo: getAssetPath("/gurus/Maharaj ji.jpg"),
     teaching: "Path of Bhakti Yog",
     quote: "Through devotion, one becomes the divine.",
     bio: "A revered saint guiding seekers with love and chanting...",
@@ -14,7 +15,7 @@ const gurus = [
   {
     id: "mulakhji",
     name: "Swami Mulakh ji Maharaj",
-    photo: "/gurus/Mulakh Ji maharaj.png",
+    photo: getAssetPath("/gurus/Mulakh Ji maharaj.png"),
     teaching: "Divine Feminine & Healing",
     quote: "Silence is the voice of the soul.",
     bio: "Embodies spiritual grace and healing energy through sadhana...",
@@ -23,7 +24,7 @@ const gurus = [
   {
     id: "ramlalji",
     name: "Swami Ram Lal Ji Maharaj",
-    photo: "/gurus/Ram Lal Ji maharaj.png",
+    photo: getAssetPath("/gurus/Ram Lal Ji maharaj.png"),
     teaching: "Vedanta & Self-Realization",
     quote: "Know thyself, and you shall know the universe.",
     bio: "A scholar of the Upanishads helping seekers with clarity...",
@@ -46,7 +47,7 @@ export default function OurGurus() {
           <h1 className="text-4xl sm:text-5xl font-gotu text-saffron drop-shadow-md">
             🙏 Our Yog Darbaar
           </h1>
-          <img src="/gurus/YogDarbaar.jpg" alt="Yog Darbaar" className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-xl mt-4 rounded-lg shadow-md mx-auto max-w-md" />
+          <img src={getAssetPath("/gurus/YogDarbaar.jpg")} alt="Yog Darbaar" className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-xl mt-4 rounded-lg shadow-md mx-auto max-w-md" />
           <p className="text-muted-foreground  mt-4 font-body max-w-2xl mx-auto text-base sm:text-lg" style = {{fontWeight:"bold"}}>
             गुरु महिमा गावत सदा मन रखियो अतिमोद<br></br>
             सो भव फिर आवत नहीं बैठ गुरु की गोद

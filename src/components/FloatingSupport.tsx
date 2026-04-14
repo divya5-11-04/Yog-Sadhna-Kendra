@@ -271,7 +271,7 @@ const FloatingSupport = () => {
                     {/* QR Code Image */}
                     <div className="w-72 h-72 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl border-2 border-dashed border-primary/40 flex items-center justify-center p-4 secure-data" onContextMenu={handleContextMenu}>
                       <img
-                        src="/qr-code.png"
+                        src={getAssetPath("/qr-code.png")}
                         alt="UPI Payment QR Code"
                         className="w-full h-full object-contain select-none pointer-events-none"
                         draggable={false}

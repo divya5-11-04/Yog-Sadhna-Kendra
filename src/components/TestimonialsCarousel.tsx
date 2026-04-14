@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { getAssetPath } from "@/lib/assetPath";
 
 const testimonials = [
   {
@@ -12,7 +13,7 @@ const testimonials = [
     rating: 5,
     testimonial:
       "Suffered from bloating, the personalized yog plan from Yog Sadhana Kendra completely transformed my life.",
-    video: "public/testimonials/1.mp4",
+    video: getAssetPath("/testimonials/1.mp4"),
     duration: "Felt better within a day, complete relief in 2 weeks",
   },
   {
@@ -23,7 +24,7 @@ const testimonials = [
     rating: 5,
     testimonial:
       "Our City is lucky to have such a gem. The yog sessions and guidance from Yog Sadhana Kendra not only relieved my back pain but also helped me manage my diabetes effectively.",
-    video: "public/testimonials/2.mp4",
+    video: getAssetPath("/testimonials/2.mp4"),
     duration: "6 months of practice",
   },
   // add more testimonials...
