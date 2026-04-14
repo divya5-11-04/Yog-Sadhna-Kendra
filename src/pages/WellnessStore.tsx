@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Heart, ShoppingCart, CheckCircle, Droplets } from "lucide-react";
+import { getAssetPath } from "@/lib/assetHelper";
 
 export default function WellnessStore() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -69,7 +70,7 @@ export default function WellnessStore() {
                     controls
                     className="w-full h-full object-cover"
                   >
-                    <source src="/ashram/Neti_Lauta_with_202604061306.mp4" type="video/mp4" />
+                    <source src={getAssetPath("/ashram/Neti_Lauta_with_202604061306.mp4")} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -171,7 +172,7 @@ export default function WellnessStore() {
                     }}
                   >
                     <img
-                      src="/ashram/neti.jpeg"
+                      src={getAssetPath("/ashram/neti.jpeg")}
                       alt="Neti Pot Front"
                       className="w-full h-full object-cover rounded-2xl"
                     />
@@ -186,7 +187,7 @@ export default function WellnessStore() {
                     }}
                   >
                     <img
-                      src="/ashram/This_neti_pipe_202604061405.png"
+                      src={getAssetPath("/ashram/This_neti_pipe_202604061405.png")}
                       alt="Neti Pipe"
                       className="w-full h-full object-cover rounded-2xl"
                     />

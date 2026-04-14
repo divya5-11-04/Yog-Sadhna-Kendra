@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import React from "react";
+import { getAssetPath } from "@/lib/assetHelper";
 
 const gurus = [
   {
     id: "rampyaaraji",
     name: "Swami Ram Pyaara ji Maharaj",
-    photo: "/gurus/Maharaj ji.jpg",
+    photo: getAssetPath("/gurus/Maharaj ji.jpg"),
     teaching: "Path of Bhakti Yog",
     quote: "Om Namo Shri Ram Mulakh Pyara Ji Par Brahmne Namah",
     fullBio: "Swami Anand Giri Ji is a living embodiment of Bhakti Yog. Born in a spiritual lineage, he spent decades in Himalayan retreats meditating and guiding seekers with divine love. His satsangs are filled with kirtans and his voice invokes deep peace. His work in uplifting village communities through yog is widely respected...",
@@ -13,7 +14,7 @@ const gurus = [
   {
     id: "mulakhji",
     name: "Swami Mulakh Ji Maharaj",
-    photo: "/gurus/Mulakh Ji maharaj.png",
+    photo: getAssetPath("/gurus/Mulakh Ji maharaj.png"),
     teaching: "Path of Bhakti Yog",
     quote: "Through devotion, one becomes the divine.",
     fullBio: <span 
@@ -33,7 +34,7 @@ const gurus = [
   {
     id: "ramlalji",
     name: "Swami Ram Laal Ji Maharaj",
-    photo: "/gurus/pic-2.png",
+    photo: getAssetPath("/gurus/pic-2.png"),
     teaching: "Path of Bhakti Yog",
     quote: "Through devotion, one becomes the divine.",
     fullBio: <span 

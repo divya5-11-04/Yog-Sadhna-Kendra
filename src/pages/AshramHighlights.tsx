@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { getAssetPath } from "@/lib/assetHelper";
 
 declare global {
   interface Window {
@@ -17,23 +18,23 @@ interface MediaItem {
 }
 
 const photoMoments: MediaItem[] = [
-  { id: 1, type: "image", src: "/ashram/1.jpg", alt: "Ashram Moment 1" },
-  { id: 2, type: "image", src: "/ashram/2.jpg", alt: "Ashram Moment 2" },
-  { id: 3, type: "image", src: "/ashram/3.jpg", alt: "Ashram Moment 3" },
-  { id: 4, type: "image", src: "/ashram/4.jpg", alt: "Ashram Moment 4" },
-  { id: 5, type: "image", src: "/ashram/5.jpg", alt: "Ashram Moment 5" },
-  { id: 6, type: "image", src: "/ashram/6.jpg", alt: "Ashram Moment 6" },
+  { id: 1, type: "image", src: getAssetPath("/ashram/1.jpg"), alt: "Ashram Moment 1" },
+  { id: 2, type: "image", src: getAssetPath("/ashram/2.jpg"), alt: "Ashram Moment 2" },
+  { id: 3, type: "image", src: getAssetPath("/ashram/3.jpg"), alt: "Ashram Moment 3" },
+  { id: 4, type: "image", src: getAssetPath("/ashram/4.jpg"), alt: "Ashram Moment 4" },
+  { id: 5, type: "image", src: getAssetPath("/ashram/5.jpg"), alt: "Ashram Moment 5" },
+  { id: 6, type: "image", src: getAssetPath("/ashram/6.jpg"), alt: "Ashram Moment 6" },
 ];
 
 const videoMoments: MediaItem[] = [
-  { id: 1, type: "video", src: "/ashram/1.mp4", alt: "Ashram Video 1" },
-  { id: 2, type: "video", src: "/ashram/2.mp4", alt: "Ashram Video 2" },
-  { id: 3, type: "video", src: "/ashram/3.mp4", alt: "Ashram Video 3" },
-  { id: 4, type: "video", src: "/ashram/4.mp4", alt: "Ashram Video 4" },
-  { id: 5, type: "video", src: "/ashram/5.mp4", alt: "Ashram Video 5" },
-  { id: 6, type: "video", src: "/ashram/6.mp4", alt: "Ashram Video 6" },
-  { id: 7, type: "video", src: "/ashram/7.mp4", alt: "Ashram Video 7" },
-  { id: 8, type: "video", src: "/ashram/8.mp4", alt: "Ashram Video 8" },
+  { id: 1, type: "video", src: getAssetPath("/ashram/1.mp4"), alt: "Ashram Video 1" },
+  { id: 2, type: "video", src: getAssetPath("/ashram/2.mp4"), alt: "Ashram Video 2" },
+  { id: 3, type: "video", src: getAssetPath("/ashram/3.mp4"), alt: "Ashram Video 3" },
+  { id: 4, type: "video", src: getAssetPath("/ashram/4.mp4"), alt: "Ashram Video 4" },
+  { id: 5, type: "video", src: getAssetPath("/ashram/5.mp4"), alt: "Ashram Video 5" },
+  { id: 6, type: "video", src: getAssetPath("/ashram/6.mp4"), alt: "Ashram Video 6" },
+  { id: 7, type: "video", src: getAssetPath("/ashram/7.mp4"), alt: "Ashram Video 7" },
+  { id: 8, type: "video", src: getAssetPath("/ashram/8.mp4"), alt: "Ashram Video 8" },
 ];
 
 export default function AshramHighlights() {
