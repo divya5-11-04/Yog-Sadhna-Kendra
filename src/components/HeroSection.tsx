@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Booking from "@/components/Booking";
 import { useNavigate } from 'react-router-dom';
-import { getAssetPath } from "@/lib/assetHelper";
 
 import {
   Dialog,
@@ -22,19 +21,19 @@ const gurus = [
     id: 1,
     name: "Maharaj Ji",
     mantra: " करो योग रहो निरोग ",
-    image: getAssetPath("/gurus/Maharaj ji.jpg"),
+    image: "/gurus/Maharaj ji.jpg",
   },
   {
     id: 2,
     name: "Ram Lal Ji maharaj",
     mantra: "🌹राम नाम की नैय्या लेकर सतगुरू करें पुकार आओ मेरी नैय्या में ले जाऊंगा भव पार🌹",
-    image: getAssetPath("/gurus/Ram Lal Ji maharaj.png"),
+    image: "/gurus/Ram Lal Ji maharaj.png",
   },
   {
     id: 3,
     name: "Swami Ram Mulakh Ji Maharaj",
     mantra: "तत् त्वम् असि",
-    image: getAssetPath("/gurus/Mulakh Ji maharaj.png"),
+    image: "/gurus/Mulakh Ji maharaj.png",
   },
 ];
 
